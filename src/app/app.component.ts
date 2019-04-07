@@ -7,19 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appNews';
-  toggled: boolean = false;
-  constructor() {
-
-  }
-  handleClick() {
-    let selector = document.getElementById('wrapper');
-    if (this.toggled) {
-      selector.classList.remove('toggled');
-      this.toggled = !this.toggled
-    } else {
-      selector.classList.add('toggled');
-      this.toggled = !this.toggled
-
-    }
-  }
 }
