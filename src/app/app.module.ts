@@ -9,17 +9,18 @@ import { APP_ROUTES } from './app.routes';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PagesComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

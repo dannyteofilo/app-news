@@ -7,6 +7,7 @@ import { EntertainmentComponent } from './entertainment/entertainment.component'
 import { ScienceComponent } from './science/science.component';
 import { SportsComponent } from './sports/sports.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { HealthComponent } from './health/health.component';
 
 const pagesRoutes:Routes=[
     {
@@ -15,6 +16,7 @@ const pagesRoutes:Routes=[
             {path:'dashboard',component:DashboardComponent},
             {path:'business',component:BusinessComponent},
             {path:'bitcoin',component:BitcoinComponent},
+            {path:'healt',component:HealthComponent},
             {path:'entertainment',component:EntertainmentComponent},
             {path:'science',component:ScienceComponent},
             {path:'sports',component:SportsComponent},

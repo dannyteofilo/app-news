@@ -10,13 +10,17 @@ import { SportsComponent } from './sports/sports.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { PagesComponent } from './pages.component';
 
 @NgModule({
-  declarations: [DashboardComponent, BusinessComponent, BitcoinComponent, HealthComponent, EntertainmentComponent, ScienceComponent, SportsComponent, TechnologyComponent],
+  declarations: [PagesComponent,DashboardComponent, BusinessComponent, BitcoinComponent, HealthComponent, EntertainmentComponent, ScienceComponent, SportsComponent, TechnologyComponent],
   imports: [
     CommonModule,
     SharedModule,
     PAGES_ROUTES
+  ],
+  exports:[
+    PagesComponent
   ]
 })
 export class PagesModule { }
