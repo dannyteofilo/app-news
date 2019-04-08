@@ -1,0 +1,10 @@
+<div class="row countries-container">
+    <div class="col-3" *ngFor="let item of data.countries">
+        <div class="card" style="width: 12rem;">
+            <img src="{{item.urlImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" (click)="onClick(item.id,item.country)" class="btn btn-secondary">{{item.country}}</a>
+            </div>
+        </div>
+    </div>
+</div>

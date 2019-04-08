@@ -1,26 +1,12 @@
 import { Routes, RouterModule } from "@angular/router";
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { BusinessComponent } from './business/business.component';
-import { BitcoinComponent } from './bitcoin/bitcoin.component';
-import { EntertainmentComponent } from './entertainment/entertainment.component';
-import { ScienceComponent } from './science/science.component';
-import { SportsComponent } from './sports/sports.component';
-import { TechnologyComponent } from './technology/technology.component';
-import { HealthComponent } from './health/health.component';
+import { NewsapiComponent } from './newsapi/newsapi.component';
 
 const pagesRoutes:Routes=[
     {
         path:'',component:PagesComponent,
         children:[
-            {path:'dashboard',component:DashboardComponent},
-            {path:'business',component:BusinessComponent},
-            {path:'bitcoin',component:BitcoinComponent},
-            {path:'healt',component:HealthComponent},
-            {path:'entertainment',component:EntertainmentComponent},
-            {path:'science',component:ScienceComponent},
-            {path:'sports',component:SportsComponent},
-            {path:'technology',component:TechnologyComponent}
+            {path:'newsapi',component:NewsapiComponent}
         ]
 
     }

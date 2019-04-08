@@ -1,0 +1,8 @@
+.countries-container {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.card {
+    margin-top: 4em;
+}

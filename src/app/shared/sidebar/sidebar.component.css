@@ -1,0 +1,41 @@
+.border-right {
+    box-shadow: 1px 1px 15px #999;
+}
+
+.sidebar-color {
+    background-color: #FFFFFF;
+}
+
+.list-group-item {
+    background-color: #FFFFFF!important;
+    border: none;
+}
+
+.sidebar-title {
+    font-size: 2rem!important;
+    font-weight: 700;
+    color: #000000;
+}
+
+.sidebar-item {
+    font-size: 16px!important;
+    font-weight: 600;
+    color: #000000;
+}
+
+.sidebar-date {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #aeb5c0;
+}
+
+.sidebar-item-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.list-group-item.active {
+    background-color: #aeb5c0!important;
+}

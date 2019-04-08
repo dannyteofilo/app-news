@@ -6,32 +6,11 @@ import { Injectable } from '@angular/core';
 export class SidebarService {
   menu:any=[    
     {
-      title:'Business',
-      url:'/business'
-    },
-    {
-      title:'Bitcoin',
-      url:'/bitcoin'
-    },
-    {
-      title:'Healt',
-      url:'/healt'
-    },
-    {
-      title:'Entertainment',
-      url:'/entertainment'
-    },
-    {
-      title:'Science',
-      url:'/science'
-    },
-    {
-      title:'Sports',
-      url:'/sports'
-    },{
-      title:'Technology',
-      url:'/technology'
+      title:'News API',
+      url:'/newsapi',
+      icon:'https://newsapi.org/favicon-32x32.png'
     }
+    
   ];
   constructor() { }
 }
