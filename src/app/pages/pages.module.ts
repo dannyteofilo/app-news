@@ -7,13 +7,15 @@ import { NewsapiComponent } from './newsapi/newsapi.component';
 import { CountriesNewsApiComponent } from './countries-news-api/countries-news-api.component';
 import { DashboardNewsApiComponent } from './dashboard-news-api/dashboard-news-api.component';
 import { FiltersComponent } from '../components/filters/filters.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [PagesComponent, NewsapiComponent, CountriesNewsApiComponent, DashboardNewsApiComponent,FiltersComponent],
   imports: [
     CommonModule,
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    HttpClientModule
   ],
   exports:[
     PagesComponent

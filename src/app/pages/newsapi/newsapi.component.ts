@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NewsapiComponent implements OnInit {
   currentView:boolean=true;
   country:string=''
+  idCountry:string='';
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +19,7 @@ export class NewsapiComponent implements OnInit {
     console.log('Event: ',event)
     if(event){
       this.country=event.country;
+      this.idCountry=event.id;
     }
     this.currentView=!this.currentView;
   }
