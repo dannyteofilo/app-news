@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FiltersService } from 'src/app/services/service.index';
 
 @Component({
   selector: 'app-filters',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiltersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _fiters:FiltersService) { }
 
   ngOnInit() {
   }

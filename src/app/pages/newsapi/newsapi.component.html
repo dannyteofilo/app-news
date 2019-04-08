@@ -1,4 +1,6 @@
-<app-countries-news-api *ngIf="currentView" (chooseCountry)="onChoose($event)">
-</app-countries-news-api>
+<div class="jumbotron" *ngIf="!currentView">
 
-<app-dashboard-news-api *ngIf="!currentView" (back)="onChoose($event)" country="{{country}}"></app-dashboard-news-api>
+    <app-countries-news-api (chooseCountry)="onChoose($event)">
+    </app-countries-news-api>
+</div>
+<app-dashboard-news-api *ngIf="currentView" (back)="onChoose($event)" country="{{country}}"></app-dashboard-news-api>

@@ -1,7 +1,6 @@
 .countries-container {
     max-height: 80vh;
     overflow-y: scroll;
-    margin: 1rem 0 0 0;
 }
 
 .card {

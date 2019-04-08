@@ -11,6 +11,7 @@ export class DashboardNewsApiComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.country='Mexico'
   }
 
   goToBack(){

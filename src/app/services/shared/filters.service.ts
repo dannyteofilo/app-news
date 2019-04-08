@@ -12,26 +12,32 @@ export class FiltersService {
     },
     {
       title:'Bitcoin',
-      category:'bitcoin'
+      category:'bitcoin',
+      icon:'assets/icons/filters_bitcoin.svg'
     },
     {
       title:'Healt',
-      category:'healt'
+      category:'healt',
+      icon:'assets/icons/filters_health.svg'
     },
     {
       title:'Entertainment',
-      category:'entertainment'
+      category:'entertainment',
+      icon:'assets/icons/filters_entertainment.svg'
     },
     {
       title:'Science',
-      category:'science'
+      category:'science',
+      icon:'assets/icons/filters_science.svg'
     },
     {
       title:'Sports',
-      category:'sports'
+      category:'sports',
+      icon:'assets/icons/filters_sports.svg'
     },{
       title:'Technology',
-      category:'technology'
+      category:'technology',
+      icon:'assets/icons/filters_tech.svg'
     }
   ];
   constructor() { }
