@@ -1,6 +1,10 @@
-<div class="bg-light border-right" id="sidebar-wrapper">
-    <div class="sidebar-heading">Dash News </div>
+<div class="border-right sidebar-color" id="sidebar-wrapper">
+    <p class="sidebar-date">{{date}}</p>
+    <div class="sidebar-heading sidebar-title">Dash News </div>
+    <hr>
+    <div class="sidebar-heading sidebar-title">Sources </div>
     <div class="list-group list-group-flush" *ngFor="let item of _sidebar.menu">
-        <a routerLinkActive="active" [routerLink]="[item.url]" class="list-group-item list-group-item-action bg-light">{{item.title}}</a>
+
+        <a routerLinkActive="active" [routerLink]="[item.url]" class="list-group-item list-group-item-action sidebar-item"><img class="sidebar-item-icon" src="{{item.icon}}" alt=""> {{item.title}}</a>
     </div>
 </div>
