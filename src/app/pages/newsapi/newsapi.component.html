@@ -1,3 +1,4 @@
-<p>
-  newsapi works!
-</p>
+<app-countries-news-api *ngIf="currentView" (chooseCountry)="onChoose($event)">
+</app-countries-news-api>
+
+<app-dashboard-news-api *ngIf="!currentView" (back)="onChoose($event)" country="{{country}}"></app-dashboard-news-api>

@@ -35,3 +35,7 @@
     width: 20px;
     height: 20px;
 }
+
+.list-group-item.active {
+    background-color: #aeb5c0!important;
+}
