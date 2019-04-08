@@ -4,3 +4,33 @@
     font-weight: 900;
     text-transform: uppercase;
 }
+
+.dashboard-news-img-principal {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.dashboard-news-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.dashboard-desc {
+    height: 80px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contentView {
+    background-color: aqua;
+    height: 200px;
+}
+
+.container {
+    background-color: antiquewhite;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
