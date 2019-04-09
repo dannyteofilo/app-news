@@ -2,7 +2,7 @@
     <li class="nav-item" *ngFor="let item of _fiters.menu">
         <div class="contant-filter-icon">
             <img class="filters-icon" src="{{item.icon}}" alt="">
-            <a class="nav-link active" href="#">{{item.title}}</a>
+            <a class="nav-link active" href="#" (click)="byCategory(item.category)">{{item.title}}</a>
         </div>
     </li>
     <!-- <li class="nav-item">
