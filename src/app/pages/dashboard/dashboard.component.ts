@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
   constructor(public _getNews: NewsApiService) { }
 
   ngOnInit() {
-    this.getNews(this.idCountry)
+    this.getNews()
     this.validateDataExist()
   }
 
@@ -28,11 +28,11 @@ export class DashboardComponent implements OnInit {
     window.open(url, '_blank');
   }
 
-  getNews(id: string) {
+  getNews() {
     this.loading=true;
     this.newArr=[]
 
-    this._getNews.getByCountry(id).subscribe(
+    this._getNews.getEverything().subscribe(
       response => {
         this.news = response;
         this.validateDataExist()

@@ -15,10 +15,14 @@ export class NewsApiService {
   }
 
   getByCountry(id:string){
-    return this._http.get(`${this.url}?country=${id}&apikey=${this.key}`)
+    return this._http.get(`${this.url}top-headlines?country=${id}&apikey=${this.key}`)
   }
 
   getByCategory(id:string,category:string){
-    return this._http.get(`${this.url}?country=${id}&category=${category}&apiKey=${this.key}`)
+    return this._http.get(`${this.url}top-headlines?country=${id}&category=${category}&apiKey=${this.key}`)
+  }
+
+  getEverything(){
+    return this._http.get(`${this.url}everything?q=bitcoin&apiKey=${this.key}`)
   }
 }

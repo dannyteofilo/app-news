@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styles: ['.navbar-toggler-icon{cursor:pointer};']
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
 

@@ -1,0 +1,13 @@
+.navbar-toggler-icon {
+    cursor: pointer
+}
+
+.navbar {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: block;
+    }
+}
