@@ -1,8 +1,8 @@
 <div class="border-right sidebar-color" id="sidebar-wrapper">
     <p class="sidebar-date">{{date}}</p>
-    <div class="sidebar-heading sidebar-title">Dash News </div>
+    <div class="sidebar-heading sidebar-title" [routerLink]="['']">Dash News </div>
     <hr>
-    <div class="sidebar-heading sidebar-title">Sources </div>
+    <div class="sidebar-heading sidebar-subtitle">Sources </div>
     <div class="list-group list-group-flush" *ngFor="let item of _sidebar.menu">
 
         <a routerLinkActive="active" [routerLink]="[item.url]" class="list-group-item list-group-item-action sidebar-item"><img class="sidebar-item-icon" src="{{item.icon}}" alt=""> {{item.title}}</a>

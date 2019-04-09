@@ -16,12 +16,12 @@
     <br>
 
     <div class="row ">
-        <div class="col-6 " *ngFor="let item of newArr ">
+        <div class="col-lg-6 " *ngFor="let item of newArr ">
             <div class="row card-divider " (click)="goToNewUrl(item.url) ">
-                <div class=" col ">
+                <div class=" col-lg-6 col-md-12 ">
                     <img class="dashboard-news-img " src="{{item.urlToImage}} " alt=" ">
                 </div>
-                <div class="col contentView ">
+                <div class="col-lg-6 col-md-12 contentView ">
                     <h3 class="dashboard-name ">{{item.source.name}}</h3>
                     <h2 class="dashboard-title ">{{item.title}}</h2>
                     <h5 class="dashboard-autor ">{{item.author ? item.author :'Anonimo'}}</h5>

@@ -11,10 +11,15 @@
     border: none;
 }
 
-.sidebar-title {
+.sidebar-title,
+.sidebar-subtitle {
     font-size: 2rem!important;
     font-weight: 700;
     color: #000000;
+}
+
+.sidebar-subtitle {
+    text-transform: uppercase;
 }
 
 .sidebar-item {
@@ -38,4 +43,8 @@
 
 .list-group-item.active {
     background-color: #aeb5c0!important;
+}
+
+.sidebar-title:hover {
+    cursor: pointer;
 }
