@@ -8,9 +8,10 @@ import { CountriesNewsApiComponent } from './countries-news-api/countries-news-a
 import { DashboardNewsApiComponent } from './dashboard-news-api/dashboard-news-api.component';
 import { FiltersComponent } from '../components/filters/filters.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [PagesComponent, NewsapiComponent, CountriesNewsApiComponent, DashboardNewsApiComponent,FiltersComponent],
+  declarations: [PagesComponent, NewsapiComponent, CountriesNewsApiComponent, DashboardNewsApiComponent,FiltersComponent, DashboardComponent],
   imports: [
     CommonModule,
     SharedModule,

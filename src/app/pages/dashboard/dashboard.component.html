@@ -1,7 +1,4 @@
-<p class="dashboard-news-title">
-    {{country ? country : defaultCountry}}</p>
-<app-filters (chooseCategory)="getNewsByCategory($event)"></app-filters>
-<button class="btn btn-link" (click)="goToBack()">< Countries</button>
+<p class="dashboard-news-title">News</p>
 
 <div *ngIf="!notData" class="container">
     <div class="row card-divider" (click)="goToNewUrl(newPrincipal.url)">

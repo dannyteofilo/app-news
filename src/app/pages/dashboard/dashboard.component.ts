@@ -1,15 +1,13 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NewsApiService } from 'src/app/services/service.index';
 
 @Component({
-  selector: 'app-dashboard-news-api',
-  templateUrl: './dashboard-news-api.component.html',
-  styleUrls: ['./dashboard-news-api.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class DashboardNewsApiComponent implements OnInit {
-  @Output() back: EventEmitter<any> = new EventEmitter();
-  @Input() country: string;
-  @Input() id: string;
+export class DashboardComponent implements OnInit {
+
   news: any = {}
   idCountry: string = 'mx'
   defaultCountry: string = 'México'
@@ -22,12 +20,8 @@ export class DashboardNewsApiComponent implements OnInit {
   constructor(public _getNews: NewsApiService) { }
 
   ngOnInit() {
-    this.getNews(this.id ? this.id : this.idCountry)
+    this.getNews(this.idCountry)
     this.validateDataExist()
-  }
-
-  goToBack() {
-    this.back.emit()
   }
 
   goToNewUrl(url: string) {
@@ -60,31 +54,6 @@ export class DashboardNewsApiComponent implements OnInit {
     );
   }
 
-  getNewsByCategory(category:string) {
-    this.loading=true;
-    this.newArr=[]
-
-    this._getNews.getByCategory(this.id,category).subscribe(
-      response => {
-        this.news = response;
-        this.validateDataExist()
-        if(this.news.articles.length!==0){          
-          this.newPrincipal=this.news.articles[0]
-          this.news.articles.map((item:any,index:number)=>{
-            if(index!==0){
-              this.newArr.push(item)
-            }
-          })
-        }
-        this.loading=false;
-
-      }, error => {
-        console.error('Failed in request: ', error);
-        this.loading=false;
-
-      }
-    );
-  }
 
   validateDataExist(){
     if(this.news.articles){
@@ -96,7 +65,4 @@ export class DashboardNewsApiComponent implements OnInit {
     }
   }
 
-
-
 }
-
